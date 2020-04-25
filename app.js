@@ -1,5 +1,5 @@
 const NodeArguments = process.argv.slice(2);
-NodeArguments.push('dRole', '0');
+
 const toggler = 't';
 const searcher = 's';
 const runner = 'd';
