@@ -4,14 +4,13 @@
   "description": "SC2H-Webapp-Bot",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "debug": "nodemon --inspect-brk app",
+    "run": "node app"
   },
   "author": "Twiggeh",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.5.1",
-    "express": "^4.17.1",
-    "node": "^12.7.0",
-    "nodemon": "^1.19.1"
+    "discord.js": "^12.2.0",
+    "express": "^4.17.1"
   }
 }

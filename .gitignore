@@ -1,4 +1,5 @@
 node_modules
 keys.json
 package-lock.json
-yarn-error.log
+yarn-error.log 
+yarn.lock
