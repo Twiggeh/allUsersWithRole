@@ -122,7 +122,7 @@
             } else return acc;
           }, clanMembers[0].length) - 5,
         name: 0,
-        joinDate: 0,
+        joindate: 10,
       };
 
       // TODO BUG : CLANMEMBERS HAS AN EMPTY STRING AS THE LAST ELEMENT, shouldn't be there
@@ -140,10 +140,15 @@
           const constructRow = args =>`  {{ ${rowLi} | ${Object.keys(args).reduce(formatter, '')} }}`;
 
           const _userName = `${userName.slice(0, -5)}`;
-          const args = { flag, race, userName: _userName, /* name, */ joinDate };
+          const args = {
+            flag,
+            race,
+            userName: _userName,
+            /* name, */ joindate: joinDate,
+          };
           const noIdentifiers = currentArg => ['userName'].includes(currentArg);
 
-          const formatter = (acc, cur) =>
+          const formatter = (acc, cur, i) =>
             (acc += `${
               noIdentifiers(cur)
                 ? `${
@@ -156,7 +161,7 @@
                       ? args[cur].padEnd(padding[cur], ' ')
                       : ' '.repeat(padding[cur])
                   }`
-            } | `);
+            }${i !== Object.keys(args).length - 1 ? ' | ' : ''}`); // last element should not have the |
 
           return constructRow(args);
         };
@@ -233,7 +238,11 @@
               if (printRoles) process.stdout.write(user._roles + '\n');
               if (printJoinDate)
                 process.stdout.write(
-                  user.joinedAt.toDateString().replace(/ /g, '-') + '\n'
+                  user.joinedAt
+                    .toLocaleDateString('de-DE')
+                    .split('.')
+                    .reverse()
+                    .join('-') + '\n'
                 );
             });
           }
