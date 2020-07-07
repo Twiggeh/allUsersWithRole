@@ -1,0 +1,81 @@
+["Special Snowflake",
+"548989780214546442",
+"put the county id here",
+
+"South Korea",
+"580419625695576074",
+"kr",
+
+"Silver Patreon Supporter",
+"579329111340744707",
+"put the county id here",
+
+"Finland",
+"547213067986141218",
+"fi",
+
+"Voicemod",
+"551914455559307303",
+"put the county id here",
+
+"Australia",
+"557623244958597121",
+"au",
+
+"Diamond Heroes V Champion",
+"704087763128942777",
+"put the county id here",
+
+"Server Owner",
+"546467743822643250",
+"put the county id here",
+
+"Master Patreon Supporter",
+"579329116243886100",
+"put the county id here",
+
+"Platinum Heroes IV Participant",
+"645212529483841559",
+"put the county id here",
+
+"Diamond Heroes I Champion",
+"645212526925053959",
+"put the county id here",
+
+"Conflict resolving.",
+"585888472620072982",
+"put the county id here",
+
+"Master",
+"553970480684466196",
+"put the county id here",
+
+"Platinum Heroes II Participant",
+"594141798214139906",
+"put the county id here",
+
+"Peepmode",
+"594609104769777675",
+"put the county id here",
+
+"France",
+"548965270136553472",
+"fr",
+
+"Discord Server List",
+"628253159604879361",
+"put the county id here",
+
+"Poland",
+"548578093116162087",
+"pl",
+
+"Member",
+"547405702293880844",
+"put the county id here",
+
+"Malaysia",
+"551412574894161931",
+"my"
+
+]

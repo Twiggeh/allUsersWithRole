@@ -1,0 +1,81 @@
+["China",
+"548966609256185879",
+"cn",
+
+"Denmark",
+"548967952859529216",
+"dk",
+
+"Morocco",
+"599217813084700675",
+"ma",
+
+"Egypt",
+"584033608168112128",
+"eg",
+
+"Russia",
+"554050963145752594",
+"ru",
+
+"South Africa",
+"564423229683269633",
+"za",
+
+"Algeria",
+"557211324778807308",
+"dz",
+
+"Slovakia",
+"687336744336752673",
+"sk",
+
+"New Zealand",
+"552307748679843841",
+"ck",
+
+"Dcheck",
+"598473102778826770",
+"put the county id here",
+
+"@everyone",
+"546452030273748993",
+"put the county id here",
+
+"Ireland",
+"548304417837809693",
+"ie",
+
+"Caster",
+"576226449284005888",
+"put the county id here",
+
+"The Welcomizer",
+"697604548902125734",
+"put the county id here",
+
+"VTL",
+"671738609061068811",
+"put the county id here",
+
+"Norway",
+"548967958412656689",
+"no",
+
+"Platinum Heroes V Participant",
+"703623396621287515",
+"put the county id here",
+
+"Mexico",
+"551039175009370116",
+"mx",
+
+"Portugal",
+"549567923769966592",
+"pt",
+
+"Terran Student",
+"575802148366057472",
+"put the county id here"
+
+]

@@ -1,0 +1,81 @@
+["Clan Manager",
+"671725554738790400",
+"put the county id here",
+
+"Ukraine",
+"564423912230879255",
+"ua",
+
+"Uruguay",
+"578309289077374989",
+"uy",
+
+"Guest",
+"547406011842035715",
+"put the county id here",
+
+"Colombia",
+"553955122615549953",
+"co",
+
+"Tourney Bot",
+"613797614462173188",
+"put the county id here",
+
+"ATL-NA",
+"634207034623000596",
+"put the county id here",
+
+"Protoss",
+"546486620447309829",
+"p",
+
+"Terran Coach",
+"556487011066707968",
+"put the county id here",
+
+"Grandmaster Patreon Supporter",
+"579329116801597499",
+"put the county id here",
+
+"Belgium",
+"548965662832459792",
+"be",
+
+"Diamond Heroes V Participant",
+"703623712238338132",
+"put the county id here",
+
+"Peru",
+"712020796196913213",
+"pe",
+
+"Bulgaria",
+"587392946970689586",
+"bg",
+
+"Bots",
+"548975250118017045",
+"put the county id here",
+
+"Platinum Heroes V Champion",
+"704087752278278305",
+"put the county id here",
+
+"Platinum Heroes III Participant",
+"619550488739971075",
+"put the county id here",
+
+"Random",
+"551520197257854981",
+"r",
+
+"Zerg Coach",
+"556487007535366174",
+"put the county id here",
+
+"Serbia",
+"564425197789118464",
+"rs"
+
+]

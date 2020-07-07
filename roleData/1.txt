@@ -1,0 +1,81 @@
+["CTL",
+"671738606850801695",
+"put the county id here",
+
+"Admin",
+"641682841335496726",
+"put the county id here",
+
+"Zerg Student",
+"575802150697828353",
+"put the county id here",
+
+"Czech Republic",
+"548967960350556166",
+"cz",
+
+"Clan Applicant",
+"702130351274983474",
+"put the county id here",
+
+"carl-bot",
+"548923767829692456",
+"put the county id here",
+
+"Platinum Heroes IV Champion",
+"645744090281017357",
+"put the county id here",
+
+"Simple Poll",
+"675414447782756353",
+"put the county id here",
+
+"Web dev",
+"598891772499984394",
+"put the county id here",
+
+"Platinum Patreon Supporter",
+"579329114306248726",
+"put the county id here",
+
+"Bronze Hero",
+"581963717076320297",
+"put the county id here",
+
+"ToonDragon Award",
+"704240750182924308",
+"put the county id here",
+
+"Jordan",
+"580750826037837825",
+"jo",
+
+"Mauritius",
+"554051328280756234",
+"mu",
+
+"Nightbot",
+"645010739773440019",
+"put the county id here",
+
+"Iran",
+"552238729222422541",
+"ir",
+
+"Israel",
+"547875718936395776",
+"il",
+
+"Co-op",
+"601384511481053236",
+"put the county id here",
+
+"ATL eu",
+"709276678253445151",
+"put the county id here",
+
+"Y.E.E.T",
+"573501721091768350",
+"put the county id here"
+
+]

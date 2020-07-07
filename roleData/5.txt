@@ -1,0 +1,81 @@
+["Gold Hero",
+"546476838244057089",
+"put the county id here",
+
+"Platinum Heroes II Champion",
+"645212525901643797",
+"put the county id here",
+
+"Tournament Admin",
+"596259958484500480",
+"put the county id here",
+
+"Official Server Partner",
+"577490081841938443",
+"put the county id here",
+
+"PH Archon I winner",
+"642844489571893273",
+"put the county id here",
+
+"Smurf Hunter",
+"577947179579211786",
+"put the county id here",
+
+"Silver Hero",
+"550091418333609984",
+"put the county id here",
+
+"Gold Patreon Supporter",
+"579329113064472587",
+"put the county id here",
+
+"KTL",
+"671738610760024104",
+"put the county id here",
+
+"Platinum Heroes I Participant",
+"578583707212840981",
+"put the county id here",
+
+"Diamond Hero",
+"546797653560786947",
+"put the county id here",
+
+"Moderator",
+"666575327669125123",
+"put the county id here",
+
+"Archon",
+"564489849348816926",
+"put the county id here",
+
+"Applicant",
+"635963993499893761",
+"put the county id here",
+
+"Don't listen to me!",
+"641680997502550054",
+"put the county id here",
+
+"Diamond Heroes II Participant",
+"594141626079772675",
+"put the county id here",
+
+"Germany",
+"546520515276177408",
+"de",
+
+"Macedonia",
+"547875405395263509",
+"mk",
+
+"Thailand",
+"570600691865878559",
+"th",
+
+"Ecuador",
+"671371558702546975",
+"ec"
+
+]

@@ -1,0 +1,41 @@
+["Protoss Student",
+"575802153541828609",
+"put the county id here",
+
+"Kazakhstan",
+"593075639435919360",
+"kz",
+
+"Arcade",
+"598469018030178317",
+"put the county id here",
+
+"Palestine",
+"702527654984679544",
+"ps",
+
+"Indonesia",
+"565141965004603412",
+"id",
+
+"Diamond Heroes I Participant",
+"578587291287683073",
+"put the county id here",
+
+"Hungary",
+"551436806634209290",
+"hu",
+
+"Nitro Nellie",
+"609374346850598932",
+"put the county id here",
+
+"Singapore",
+"550808078207942657",
+"sg",
+
+"Zerg",
+"546486534896091141",
+"z"
+
+]

@@ -1,0 +1,81 @@
+["🌎Public",
+"547406510406238228",
+"put the county id here",
+
+"Spain",
+"548645704227094548",
+"es",
+
+"Myanmar",
+"607530869892186113",
+"mm",
+
+"Dubai",
+"648496950840393758",
+"ae",
+
+"Grandmaster",
+"565289183648677888",
+"put the county id here",
+
+"Diamond Heroes III Champion",
+"622902117782388736",
+"put the county id here",
+
+"Chile",
+"576123541909667900",
+"cl",
+
+"Latvia",
+"565105572119314476",
+"lv",
+
+"Aspiring Coach",
+"552128337766514690",
+"put the county id here",
+
+"The Netherlands",
+"546489096311406632",
+"nl",
+
+"Phillipines",
+"578705875380862977",
+"ph",
+
+"Select Role",
+"584431967093784577",
+"put the county id here",
+
+"Slovenia",
+"561563998760468510",
+"si",
+
+"India",
+"579051852390465558",
+"in",
+
+"Terran",
+"546486592928350218",
+"t",
+
+"Canada",
+"547572851553599548",
+"ca",
+
+"Romania",
+"550662331063992320",
+"ro",
+
+"Protoss Coach",
+"556487013818302464",
+"put the county id here",
+
+"Bronze Patreon Supporter",
+"579329108857847824",
+"put the county id here",
+
+"Clan War",
+"584795698105679881",
+"put the county id here"
+
+]

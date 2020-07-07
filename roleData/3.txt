@@ -1,0 +1,81 @@
+["Clan Member",
+"589030949488951296",
+"put the county id here",
+
+"Diamond Patreon Supporter",
+"579329115727986707",
+"put the county id here",
+
+"Lithuania",
+"554298107462942797",
+"lt",
+
+"Semi-pro",
+"728645130155982869",
+"put the county id here",
+
+"https://www.twitch.tv/creightonolsen",
+"577490383974694914",
+"put the county id here",
+
+"Inactive Coach",
+"581839507343540228",
+"put the county id here",
+
+"Platinum Heroes I Champion",
+"645212523368546306",
+"put the county id here",
+
+"Estonia",
+"552495769337331713",
+"ee",
+
+"Taco mod",
+"696738299297005648",
+"put the county id here",
+
+"Diamond Heroes II Champion",
+"645212528493854720",
+"put the county id here",
+
+"Patreon",
+"579328604782067721",
+"put the county id here",
+
+"Nitro Booster",
+"609362489486082058",
+"put the county id here",
+
+"Diamond Heroes III Participant",
+"619549896189542411",
+"put the county id here",
+
+"Platinum Heroes III Champion",
+"622901478872317953",
+"put the county id here",
+
+"Taiwan",
+"548966501533614130",
+"tw",
+
+"Diamond Heroes IV Champion",
+"645744089165332505",
+"put the county id here",
+
+"United States",
+"546489354915414046",
+"us",
+
+"Platinum Hero",
+"546467517409787904",
+"put the county id here",
+
+"Clan Assistant",
+"671725556026441748",
+"put the county id here",
+
+"Argentina",
+"635965240059887616",
+"ar"
+
+]

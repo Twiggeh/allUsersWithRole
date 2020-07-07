@@ -6,17 +6,58 @@
   "configurations": [
     {
       "type": "node",
-      "request": "attach",
-      "name": "Attach",
-      "port": 9229,
+      "request": "launch",
+      "name": "getEveryone",
+      "runtimeExecutable": "/home/twiggeh/.yarn/bin/nodemon",
+      "runtimeArgs": ["--inspect-brk", "app.js", "sRole", "[\"everyone\"]"],
+      "program": "${workspaceFolder}/app.js",
+      "restart": true,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
       "skipFiles": ["<node_internals>/**"]
     },
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
-      "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/app.js"
+      "name": "wLiquid",
+      "runtimeExecutable": "/home/twiggeh/.yarn/bin/nodemon",
+      "runtimeArgs": ["--inspect-brk", "app.js", "wLiquid"],
+      "program": "${workspaceFolder}/app.js",
+      "restart": true,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "purgeNoIds",
+      "runtimeExecutable": "/home/twiggeh/.yarn/bin/nodemon",
+      "runtimeArgs": ["--inspect-brk", "purgeWithoutId.js"],
+      "program": "${workspaceFolder}/purgeWithoutId.js",
+      "restart": true,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "stitchFiles",
+      "runtimeExecutable": "/home/twiggeh/.yarn/bin/nodemon",
+      "runtimeArgs": ["--inspect-brk", "stitchFilledRoles.js"],
+      "program": "${workspaceFolder}/stitchFilledRoles.js",
+      "restart": true,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach",
+      "port": 9229,
+      "skipFiles": ["<node_internals>/**"]
     }
   ]
 }

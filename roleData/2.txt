@@ -1,0 +1,81 @@
+["Cuba",
+"611215400520384512",
+"cu",
+
+"Diamond Heroes IV Participant",
+"645214916558585856",
+"put the county id here",
+
+"Austria",
+"548967950548205605",
+"at",
+
+"Turkey",
+"576784674140192818",
+"tr",
+
+"Croatia",
+"550690094575779840",
+"hr",
+
+"Guatamala",
+"593396712836562944",
+"gt",
+
+"Unranked",
+"547772403074203659",
+"put the county id here",
+
+"Hong Kong",
+"631309708665421824",
+"hk",
+
+"B.O.S.S",
+"573499074695659541",
+"put the county id here",
+
+"Brazil",
+"551039838984339467",
+"br",
+
+"Belarus",
+"564440888676188210",
+"by",
+
+"Vietnam",
+"601436520829943845",
+"vn",
+
+"Italy",
+"548965669136498694",
+"it",
+
+"Greece",
+"551179235926999056",
+"gr",
+
+"Switzerland",
+"548966615551836160",
+"ch",
+
+"Sweden",
+"548967955447152642",
+"se",
+
+"United Kingdom",
+"546489021111599104",
+"uk",
+
+"Liquipedia Janitor",
+"704651258769965139",
+"put the county id here",
+
+"Coach",
+"546799895840030736",
+"put the county id here",
+
+"Archon Tournament",
+"642715148422742016",
+"put the county id here"
+
+]
