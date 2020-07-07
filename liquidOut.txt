@@ -1,118 +1,118 @@
 {{Squad player list start|main=true|best results range=}}
-  {{ Squad player row | flag=eg | race=z | HazemTheAssassin       | joindate=2019-9-29  }}
-  {{ Squad player row | flag=nl | race=p | BreaDy                 | joindate=2019-7-13  }}
-  {{ Squad player row | flag=us | race=z | DelverGuy              | joindate=2019-5-27  }}
-  {{ Squad player row | flag=tr | race=t | Manabu                 | joindate=2020-5-3   }}
-  {{ Squad player row | flag=se | race=p | Agge1337               | joindate=2020-6-24  }}
-  {{ Squad player row | flag=us | race=t | CrazySoldier           | joindate=2020-7-3   }}
-  {{ Squad player row | flag=de | race=z | gxalpha                | joindate=2019-8-15  }}
-  {{ Squad player row | flag=ru | race=p | FreshFruit             | joindate=2020-2-11  }}
-  {{ Squad player row | flag=au | race=z | Barry the Badger       | joindate=2019-9-2   }}
-  {{ Squad player row | flag=ca | race=t | CharacteR              | joindate=2019-3-4   }}
-  {{ Squad player row | flag=us | race=t | PlatinumHeroes         | joindate=2019-4-17  }}
-  {{ Squad player row | flag=us | race=t | FireBird203            | joindate=2020-3-23  }}
-  {{ Squad player row | flag=us | race=z | Mannercat              | joindate=2019-11-2  }}
-  {{ Squad player row | flag=pl | race=p | pavele                 | joindate=2019-9-17  }}
-  {{ Squad player row | flag=fr | race=p | VoidOfMars             | joindate=2019-3-4   }}
-  {{ Squad player row | flag=de | race=p | Dennis                 | joindate=2019-2-18  }}
-  {{ Squad player row | flag=us | race=p | vsep                   | joindate=2019-3-3   }}
-  {{ Squad player row | flag=lt | race=z | Cinober                | joindate=2019-3-7   }}
-  {{ Squad player row | flag=be | race=z | Hound                  | joindate=2019-3-1   }}
-  {{ Squad player row | flag=us | race=t | mistlander             | joindate=2020-3-11  }}
-  {{ Squad player row | flag=us | race=z | LivanaTalon            | joindate=2020-3-12  }}
-  {{ Squad player row | flag=us | race=p | AiurJordan             | joindate=2019-6-3   }}
+  {{ Squad player row | flag=us | race=z | DelverGuy              | joindate=2019-05-27 }}
+  {{ Squad player row | flag=tr | race=t | Manabu                 | joindate=2020-05-03 }}
+  {{ Squad player row | flag=se | race=p | Agge1337               | joindate=2020-06-24 }}
+  {{ Squad player row | flag=us | race=t | CrazySoldier           | joindate=2020-07-03 }}
+  {{ Squad player row | flag=de | race=z | gxalpha                | joindate=2019-08-15 }}
+  {{ Squad player row | flag=ru | race=p | FreshFruit             | joindate=2020-02-11 }}
+  {{ Squad player row | flag=au | race=z | Barry the Badger       | joindate=2019-09-02 }}
+  {{ Squad player row | flag=ca | race=t | CharacteR              | joindate=2019-03-04 }}
+  {{ Squad player row | flag=us | race=t | PlatinumHeroes         | joindate=2019-04-17 }}
+  {{ Squad player row | flag=us | race=t | FireBird203            | joindate=2020-03-23 }}
+  {{ Squad player row | flag=us | race=z | Mannercat              | joindate=2019-11-02 }}
+  {{ Squad player row | flag=pl | race=p | pavele                 | joindate=2019-09-17 }}
+  {{ Squad player row | flag=fr | race=p | VoidOfMars             | joindate=2019-03-04 }}
+  {{ Squad player row | flag=de | race=p | Dennis                 | joindate=2019-02-18 }}
+  {{ Squad player row | flag=us | race=p | vsep                   | joindate=2019-03-03 }}
+  {{ Squad player row | flag=eg | race=z | HazemTheAssassin       | joindate=2019-09-29 }}
+  {{ Squad player row | flag=lt | race=z | Cinober                | joindate=2019-03-07 }}
+  {{ Squad player row | flag=be | race=z | Hound                  | joindate=2019-03-01 }}
+  {{ Squad player row | flag=us | race=t | mistlander             | joindate=2020-03-11 }}
+  {{ Squad player row | flag=us | race=z | LivanaTalon            | joindate=2020-03-12 }}
+  {{ Squad player row | flag=us | race=p | AiurJordan             | joindate=2019-06-03 }}
   {{ Squad player row | flag=it | race=z | Mad                    | joindate=2019-11-22 }}
-  {{ Squad player row | flag=my | race=z | Lennon                 | joindate=2019-6-4   }}
-  {{ Squad player row | flag=il | race=z | R4ider                 | joindate=2019-4-26  }}
-  {{ Squad player row | flag=de | race=z | Ryuk                   | joindate=2019-7-23  }}
-  {{ Squad player row | flag=   | race=z | Croy_Xd                | joindate=2020-2-26  }}
-  {{ Squad player row | flag=uk | race=z | swaggyjaggy420blazeit  | joindate=2019-3-21  }}
-  {{ Squad player row | flag=hu | race=p | majsaicigány           | joindate=2019-3-4   }}
-  {{ Squad player row | flag=at | race=t | WerwolfO1              | joindate=2020-2-10  }}
-  {{ Squad player row | flag=au | race=p | Rustic Ash             | joindate=2019-9-27  }}
-  {{ Squad player row | flag=sg | race=z | LUCADEBOSS             | joindate=2020-3-10  }}
-  {{ Squad player row | flag=us | race=z | Devisune               | joindate=2019-6-5   }}
-  {{ Squad player row | flag=tw | race=z | papapanda              | joindate=2019-2-18  }}
-  {{ Squad player row | flag=au | race=p | Janpol                 | joindate=2020-3-16  }}
-  {{ Squad player row | flag=si | race=p | Xe0n                   | joindate=2020-3-10  }}
-  {{ Squad player row | flag=uk | race=z | MykeMyke               | joindate=2019-3-27  }}
-  {{ Squad player row | flag=se | race=z | alice                  | joindate=2020-3-20  }}
-  {{ Squad player row | flag=de | race=z | Helge                  | joindate=2020-3-30  }}
-  {{ Squad player row | flag=us | race=z | TacticalFluke          | joindate=2019-5-21  }}
-  {{ Squad player row | flag=   | race=z | Sat                    | joindate=2020-2-11  }}
-  {{ Squad player row | flag=us | race=t | Nikman =(              | joindate=2020-5-19  }}
+  {{ Squad player row | flag=my | race=z | Lennon                 | joindate=2019-06-04 }}
+  {{ Squad player row | flag=il | race=z | R4ider                 | joindate=2019-04-26 }}
+  {{ Squad player row | flag=de | race=z | Ryuk                   | joindate=2019-07-23 }}
+  {{ Squad player row | flag=   | race=z | Croy_Xd                | joindate=2020-02-26 }}
+  {{ Squad player row | flag=uk | race=z | swaggyjaggy420blazeit  | joindate=2019-03-21 }}
+  {{ Squad player row | flag=hu | race=p | majsaicigány           | joindate=2019-03-04 }}
+  {{ Squad player row | flag=at | race=t | WerwolfO1              | joindate=2020-02-10 }}
+  {{ Squad player row | flag=au | race=p | Rustic Ash             | joindate=2019-09-27 }}
+  {{ Squad player row | flag=sg | race=z | LUCADEBOSS             | joindate=2020-03-10 }}
+  {{ Squad player row | flag=us | race=z | Devisune               | joindate=2019-06-05 }}
+  {{ Squad player row | flag=tw | race=z | papapanda              | joindate=2019-02-18 }}
+  {{ Squad player row | flag=au | race=p | Janpol                 | joindate=2020-03-16 }}
+  {{ Squad player row | flag=si | race=p | Xe0n                   | joindate=2020-03-10 }}
+  {{ Squad player row | flag=uk | race=z | MykeMyke               | joindate=2019-03-27 }}
+  {{ Squad player row | flag=se | race=z | alice                  | joindate=2020-03-20 }}
+  {{ Squad player row | flag=de | race=z | Helge                  | joindate=2020-03-30 }}
+  {{ Squad player row | flag=us | race=z | TacticalFluke          | joindate=2019-05-21 }}
+  {{ Squad player row | flag=   | race=z | Sat                    | joindate=2020-02-11 }}
+  {{ Squad player row | flag=us | race=t | Nikman =(              | joindate=2020-05-19 }}
   {{ Squad player row | flag=ch | race=t | Housi                  | joindate=2019-11-14 }}
-  {{ Squad player row | flag=   | race=p | GentleSaint            | joindate=2020-4-4   }}
-  {{ Squad player row | flag=us | race=p | Unicorn                | joindate=2020-2-15  }}
+  {{ Squad player row | flag=   | race=p | GentleSaint            | joindate=2020-04-04 }}
+  {{ Squad player row | flag=us | race=p | Unicorn                | joindate=2020-02-15 }}
   {{ Squad player row | flag=us | race=p | UnrefinedGamer         | joindate=2019-11-12 }}
-  {{ Squad player row | flag=us | race=p | Pillar                 | joindate=2019-7-2   }}
+  {{ Squad player row | flag=us | race=p | Pillar                 | joindate=2019-07-02 }}
   {{ Squad player row | flag=de | race=z | c4ppu                  | joindate=2019-11-14 }}
-  {{ Squad player row | flag=fr | race=z | Napolitain             | joindate=2020-4-1   }}
-  {{ Squad player row | flag=us | race=r | fractal                | joindate=2019-3-7   }}
-  {{ Squad player row | flag=uk | race=z | Ginro                  | joindate=2019-3-9   }}
-  {{ Squad player row | flag=sg | race=z | Cheoklate              | joindate=2019-5-16  }}
-  {{ Squad player row | flag=us | race=z | Raziel                 | joindate=2019-5-16  }}
-  {{ Squad player row | flag=us | race=z | mLty                   | joindate=2020-6-20  }}
-  {{ Squad player row | flag=nl | race=z | Juvator                | joindate=2019-2-16  }}
-  {{ Squad player row | flag=us | race=z | Evariel                | joindate=2019-3-24  }}
-  {{ Squad player row | flag=   | race=t | MyLifeFrAiur           | joindate=2020-4-4   }}
-  {{ Squad player row | flag=id | race=r | Undetected             | joindate=2019-7-2   }}
-  {{ Squad player row | flag=ca | race=z | Kyerionn               | joindate=2019-10-9  }}
-  {{ Squad player row | flag=dk | race=p | Boiger                 | joindate=2020-6-7   }}
+  {{ Squad player row | flag=fr | race=z | Napolitain             | joindate=2020-04-01 }}
+  {{ Squad player row | flag=us | race=r | fractal                | joindate=2019-03-07 }}
+  {{ Squad player row | flag=uk | race=z | Ginro                  | joindate=2019-03-09 }}
+  {{ Squad player row | flag=sg | race=z | Cheoklate              | joindate=2019-05-16 }}
+  {{ Squad player row | flag=us | race=z | Raziel                 | joindate=2019-05-16 }}
+  {{ Squad player row | flag=us | race=z | mLty                   | joindate=2020-06-20 }}
+  {{ Squad player row | flag=nl | race=z | Juvator                | joindate=2019-02-16 }}
+  {{ Squad player row | flag=us | race=z | Evariel                | joindate=2019-03-24 }}
+  {{ Squad player row | flag=   | race=t | MyLifeFrAiur           | joindate=2020-04-04 }}
+  {{ Squad player row | flag=id | race=r | Undetected             | joindate=2019-07-02 }}
+  {{ Squad player row | flag=ca | race=z | Kyerionn               | joindate=2019-10-09 }}
+  {{ Squad player row | flag=dk | race=p | Boiger                 | joindate=2020-06-07 }}
   {{ Squad player row | flag=se | race=z | [T.I.C]Lynx Gain       | joindate=2019-11-12 }}
   {{ Squad player row | flag=fi | race=r | Buddimus               | joindate=2019-11-21 }}
   {{ Squad player row | flag=za | race=z | [CSO] BloodRayne™      | joindate=2019-10-25 }}
-  {{ Squad player row | flag=us | race=z | N000bius               | joindate=2019-8-9   }}
-  {{ Squad player row | flag=uk | race=t | aptwyvern              | joindate=2019-2-28  }}
-  {{ Squad player row | flag=us | race=p | bloom                  | joindate=2019-12-2  }}
-  {{ Squad player row | flag=fr | race=z | kadesh                 | joindate=2019-3-10  }}
-  {{ Squad player row | flag=ca | race=r | scissordaddy           | joindate=2020-4-9   }}
-  {{ Squad player row | flag=us | race=p | Piccolorick            | joindate=2019-8-15  }}
-  {{ Squad player row | flag=cn | race=t | chrisbeerbongs         | joindate=2020-3-11  }}
+  {{ Squad player row | flag=us | race=z | N000bius               | joindate=2019-08-09 }}
+  {{ Squad player row | flag=uk | race=t | aptwyvern              | joindate=2019-02-28 }}
+  {{ Squad player row | flag=us | race=p | bloom                  | joindate=2019-12-02 }}
+  {{ Squad player row | flag=fr | race=z | kadesh                 | joindate=2019-03-10 }}
+  {{ Squad player row | flag=ca | race=r | scissordaddy           | joindate=2020-04-09 }}
+  {{ Squad player row | flag=us | race=p | Piccolorick            | joindate=2019-08-15 }}
+  {{ Squad player row | flag=cn | race=t | chrisbeerbongs         | joindate=2020-03-11 }}
   {{ Squad player row | flag=no | race=p | YourBroChris           | joindate=2019-10-26 }}
-  {{ Squad player row | flag=de | race=t | chuwanga               | joindate=2019-3-4   }}
-  {{ Squad player row | flag=us | race=z | TDenstroyer            | joindate=2019-8-5   }}
-  {{ Squad player row | flag=fr | race=t | Xeralak                | joindate=2020-2-17  }}
+  {{ Squad player row | flag=de | race=t | chuwanga               | joindate=2019-03-04 }}
+  {{ Squad player row | flag=us | race=z | TDenstroyer            | joindate=2019-08-05 }}
+  {{ Squad player row | flag=fr | race=t | Xeralak                | joindate=2020-02-17 }}
   {{ Squad player row | flag=us | race=z | Joli Boli              | joindate=2019-12-23 }}
-  {{ Squad player row | flag=pl | race=p | Andrew1                | joindate=2020-3-22  }}
-  {{ Squad player row | flag=nl | race=t | miEye                  | joindate=2020-4-22  }}
-  {{ Squad player row | flag=us | race=p | Moglie09               | joindate=2019-4-7   }}
-  {{ Squad player row | flag=fr | race=z | Bijen                  | joindate=2020-3-10  }}
-  {{ Squad player row | flag=kz | race=t | dedication             | joindate=2019-5-15  }}
-  {{ Squad player row | flag=us | race=z | Xavier ɹǝıʌɐX          | joindate=2019-4-7   }}
-  {{ Squad player row | flag=   | race=p | Smudgest               | joindate=2020-4-4   }}
+  {{ Squad player row | flag=pl | race=p | Andrew1                | joindate=2020-03-22 }}
+  {{ Squad player row | flag=nl | race=t | miEye                  | joindate=2020-04-22 }}
+  {{ Squad player row | flag=us | race=p | Moglie09               | joindate=2019-04-07 }}
+  {{ Squad player row | flag=fr | race=z | Bijen                  | joindate=2020-03-10 }}
+  {{ Squad player row | flag=kz | race=t | dedication             | joindate=2019-05-15 }}
+  {{ Squad player row | flag=us | race=z | Xavier ɹǝıʌɐX          | joindate=2019-04-07 }}
+  {{ Squad player row | flag=   | race=p | Smudgest               | joindate=2020-04-04 }}
   {{ Squad player row | flag=cz | race=z | kar3sko                | joindate=2019-11-11 }}
-  {{ Squad player row | flag=us | race=p | fasy                   | joindate=2020-6-13  }}
-  {{ Squad player row | flag=nl | race=t | Sandslash14            | joindate=2020-4-15  }}
-  {{ Squad player row | flag=au | race=z | 高町なのは                  | joindate=2020-3-11  }}
-  {{ Squad player row | flag=uk | race=t | selbster               | joindate=2019-9-6   }}
-  {{ Squad player row | flag=us | race=p | ChaosChuck             | joindate=2020-3-11  }}
-  {{ Squad player row | flag=us | race=z | Kesu                   | joindate=2019-7-31  }}
-  {{ Squad player row | flag=us | race=r | Perfections            | joindate=2020-3-10  }}
-  {{ Squad player row | flag=us | race=p | Zeratul248             | joindate=2020-3-24  }}
-  {{ Squad player row | flag=pl | race=p | Kriogenic_PixelMan     | joindate=2019-2-22  }}
+  {{ Squad player row | flag=us | race=p | fasy                   | joindate=2020-06-13 }}
+  {{ Squad player row | flag=nl | race=t | Sandslash14            | joindate=2020-04-15 }}
+  {{ Squad player row | flag=au | race=z | 高町なのは                  | joindate=2020-03-11 }}
+  {{ Squad player row | flag=uk | race=t | selbster               | joindate=2019-09-06 }}
+  {{ Squad player row | flag=us | race=p | ChaosChuck             | joindate=2020-03-11 }}
+  {{ Squad player row | flag=us | race=z | Kesu                   | joindate=2019-07-31 }}
+  {{ Squad player row | flag=us | race=r | Perfections            | joindate=2020-03-10 }}
+  {{ Squad player row | flag=us | race=p | Zeratul248             | joindate=2020-03-24 }}
+  {{ Squad player row | flag=pl | race=p | Kriogenic_PixelMan     | joindate=2019-02-22 }}
   {{ Squad player row | flag=uk | race=p | Countess               | joindate=2019-10-21 }}
-  {{ Squad player row | flag=us | race=t | Eyze                   | joindate=2020-1-15  }}
-  {{ Squad player row | flag=   | race=p | BraDaDiah              | joindate=2020-4-4   }}
-  {{ Squad player row | flag=eg | race=z | Magnath                | joindate=2019-11-8  }}
-  {{ Squad player row | flag=fr | race=t | Madjid                 | joindate=2020-1-3   }}
-  {{ Squad player row | flag=us | race=z | Dalinar42              | joindate=2019-10-7  }}
+  {{ Squad player row | flag=us | race=t | Eyze                   | joindate=2020-01-15 }}
+  {{ Squad player row | flag=   | race=p | BraDaDiah              | joindate=2020-04-04 }}
+  {{ Squad player row | flag=eg | race=z | Magnath                | joindate=2019-11-08 }}
+  {{ Squad player row | flag=fr | race=t | Madjid                 | joindate=2020-01-03 }}
+  {{ Squad player row | flag=us | race=z | Dalinar42              | joindate=2019-10-07 }}
   {{ Squad player row | flag=us | race=t | Anekdotin              | joindate=2019-12-23 }}
-  {{ Squad player row | flag=fi | race=p | sarcasm                | joindate=2019-8-15  }}
-  {{ Squad player row | flag=uk | race=t | Xylophone_Impersonator | joindate=2020-7-6   }}
-  {{ Squad player row | flag=us | race=p | NyaaaGrill             | joindate=2020-4-4   }}
-  {{ Squad player row | flag=us | race=r | Pdro                   | joindate=2019-6-6   }}
-  {{ Squad player row | flag=de | race=p | voidpointercast        | joindate=2020-5-21  }}
-  {{ Squad player row | flag=ca | race=p | pepin                  | joindate=2019-4-8   }}
-  {{ Squad player row | flag=us | race=t | Luna                   | joindate=2019-3-4   }}
-  {{ Squad player row | flag=ca | race=z | Ducky83                | joindate=2019-7-18  }}
-  {{ Squad player row | flag=us | race=z | Ellie                  | joindate=2020-4-4   }}
-  {{ Squad player row | flag=ca | race=p | Siv Pax                | joindate=2020-3-23  }}
-  {{ Squad player row | flag=us | race=z | Chefboyardy            | joindate=2019-5-10  }}
-  {{ Squad player row | flag=us | race=z | Bad at Think           | joindate=2019-9-18  }}
-  {{ Squad player row | flag=   | race=t | Daywalker              | joindate=2020-4-4   }}
-  {{ Squad player row | flag=us | race=t | shard1o1               | joindate=2019-4-10  }}
-  {{ Squad player row | flag=us | race=t | ZaZen___               | joindate=2019-9-9   }}
-  {{ Squad player row | flag=be | race=t | GamePants              | joindate=2019-8-6   }}
+  {{ Squad player row | flag=fi | race=p | sarcasm                | joindate=2019-08-15 }}
+  {{ Squad player row | flag=uk | race=t | Xylophone_Impersonator | joindate=2020-07-06 }}
+  {{ Squad player row | flag=us | race=p | NyaaaGrill             | joindate=2020-04-04 }}
+  {{ Squad player row | flag=us | race=r | Pdro                   | joindate=2019-06-06 }}
+  {{ Squad player row | flag=de | race=p | voidpointercast        | joindate=2020-05-21 }}
+  {{ Squad player row | flag=ca | race=p | pepin                  | joindate=2019-04-08 }}
+  {{ Squad player row | flag=us | race=t | Luna                   | joindate=2019-03-04 }}
+  {{ Squad player row | flag=ca | race=z | Ducky83                | joindate=2019-07-18 }}
+  {{ Squad player row | flag=us | race=z | Ellie                  | joindate=2020-04-04 }}
+  {{ Squad player row | flag=ca | race=p | Siv Pax                | joindate=2020-03-23 }}
+  {{ Squad player row | flag=us | race=z | Chefboyardy            | joindate=2019-05-10 }}
+  {{ Squad player row | flag=us | race=z | Bad at Think           | joindate=2019-09-18 }}
+  {{ Squad player row | flag=   | race=t | Daywalker              | joindate=2020-04-04 }}
+  {{ Squad player row | flag=us | race=t | shard1o1               | joindate=2019-04-10 }}
+  {{ Squad player row | flag=us | race=t | ZaZen___               | joindate=2019-09-09 }}
+  {{ Squad player row | flag=be | race=t | GamePants              | joindate=2019-08-06 }}
+  {{ Squad player row | flag=nl | race=p | BreaDy                 | joindate=2019-07-13 }}
 {{Squad player list end}}
 

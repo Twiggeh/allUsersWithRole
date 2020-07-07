@@ -1,0 +1,5 @@
+node app sRole '["No Role","584431967093784577","DCHECK","598473102778826770"]' tUser tAmount
+
+This tells node to run the programm app. It tells app to search for the Roles *sRole* ["Role Name to Print", "Role ID from Discord"].
+It also tells the app to toggle the user-list off.
+It also tells the app to toggle the amount of users to off.
