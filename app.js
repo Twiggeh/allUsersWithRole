@@ -239,7 +239,7 @@
               if (printJoinDate)
                 process.stdout.write(
                   user.joinedAt
-                    .toLocaleDateString('de-DE')
+                    .toLocaleDateString('de-DE', { dateStyle: 'medium' })
                     .split('.')
                     .reverse()
                     .join('-') + '\n'
