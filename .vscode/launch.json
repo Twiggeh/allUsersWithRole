@@ -19,6 +19,18 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "wrangleWithoutRole",
+      "runtimeExecutable": "/home/twiggeh/.yarn/bin/nodemon",
+      "runtimeArgs": ["--inspect-brk", "app.js", "wWithoutRoles"],
+      "program": "${workspaceFolder}/app.js",
+      "restart": true,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "wLiquid",
       "runtimeExecutable": "/home/twiggeh/.yarn/bin/nodemon",
       "runtimeArgs": ["--inspect-brk", "app.js", "wLiquid"],
