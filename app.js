@@ -217,23 +217,97 @@
 
       keys.forEach(key => {
         if (key !== 'guest') {
-          process.stdout.write(
-            `\n\nThese users don't have a role in the Role-Group ${key}\n===================================================\n\n`
-          );
-          purgeDup(resultObject['no' + key], resultObject.guest).forEach(user =>
-            process.stdout.write(`${user}\n`)
+          resultObject['no' + key] = purgeDup(
+            resultObject['no' + key],
+            resultObject.guest
           );
         }
       });
+      delete resultObject.guest;
 
-      for (let i = 0; i < keys.length; i++) {
-        const firstSelector = resultObject['no' + keys[i]];
-        // todo make aggregator for all matchers.
+      const newCompressorAlg = (array1, array2) => {
+        const newArr = [];
+        const _array1 = JSON.parse(JSON.stringify(array1));
+        const _array2 = JSON.parse(JSON.stringify(array2));
+
+        _array1.forEach((arr1Element, arr1Index) => {
+          const arr2Index = _array2.indexOf(arr1Element);
+          if (arr2Index !== -1) {
+            _array1[arr1Index] = undefined;
+            _array2[arr2Index] = undefined;
+            newArr.push(arr1Element);
+          }
+        });
+        return [_array1.map(e => Boolean(e)), _array2.map(e => Boolean(e)), newArr];
+      };
+
+      const constructLayeredKeys = (groups, groupLayers, keys, keyLayers, iter = 0) => {
+        iter++;
+        if (keys.length !== 1) {
+          const newKeyLayer = [];
+          const newGroups = {};
+          for (let i = 0; i < keys.length - 1; i++) {
+            newKeyLayer.push(keys[0] + '_and_' + keyLayers[0][i + iter]);
+            const [boolMap1, boolMap2, newArr] = newCompressorAlg(
+              groups[keys[0]],
+              groups[keys[i + 1]]
+            );
+            if (i !== 0) {
+              // if there is already a boolmap combine the boolmaps
+              const oldBoolMap = groupLayers[iter - 1][keys[0] + '_BoolMap'];
+              const newBoolMap = boolMap1.map((el, i) => el && oldBoolMap[i]);
+              groupLayers[iter - 1][keys[0] + '_BoolMap'] = newBoolMap;
+            } else {
+              groupLayers[iter - 1][keys[0] + '_BoolMap'] = boolMap1;
+            }
+            groupLayers[iter - 1][keys[i + 1] + '_BoolMap'] = boolMap2;
+            newGroups[newKeyLayer[i]] = newArr;
+          }
+          groupLayers.push(newGroups);
+          keyLayers.push(newKeyLayer);
+          return constructLayeredKeys(
+            newGroups,
+            groupLayers,
+            newKeyLayer,
+            keyLayers,
+            iter++
+          );
+        }
+        return groupLayers;
+      };
+      // TODO : rename `layeredKeys` to something more usable
+      const layeredKeys = constructLayeredKeys(
+        resultObject,
+        [resultObject],
+        keys.map(el => 'no' + el),
+        [keys.map(el => 'no' + el)]
+      );
+
+      for (let roleGroup of layeredKeys) {
+        for (let key in roleGroup) {
+          if (key.includes('_BoolMap')) continue;
+          if (!key.startsWith('no')) continue;
+          if (key.includes('noguest')) continue;
+          const boolMap = roleGroup[key + '_BoolMap'];
+          if (boolMap === undefined || boolMap.reduce((acc, cur) => cur || acc))
+            process.stdout.write(
+              `\n\nThese users don't have a role in the Role-Group ${key}\n===================================================\n\n`
+            );
+
+          if (boolMap !== undefined) {
+            roleGroup[key].forEach((user, i) => {
+              if (boolMap[i]) process.stdout.write(`${user}\n`);
+            });
+          } else {
+            roleGroup[key].forEach(user => process.stdout.write(`${user}\n`));
+          }
+        }
       }
     };
     renderResult(result);
   };
 
+  // MAIN PROGRAM STARTS
   for (let i = 0; i < NodeArguments.length; i++) {
     const argument = NodeArguments[i];
     // exit on bad params
@@ -268,7 +342,7 @@
     if (argument.substr(0, wrangler.length) === wrangler) {
       switch (argument) {
         case wrangleLiquidCmd:
-          return await liquidWrangler();
+          return liquidWrangler();
         case wrangleAllWithoutRolesCmd: {
           console.log('Running Wrangler');
           return allWithoutWrangler();
