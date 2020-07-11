@@ -154,15 +154,19 @@
       let result = false;
       for (let i = 0; i < userRoles.length; i++) {
         const rolesInclude = roles.includes(userRoles[i]);
-        if (rolesInclude) return (result = true);
+        if (rolesInclude) return true;
       }
       return result;
     };
 
-    const hasWhichRoles = (matcher, userRoles) => {
+    const hasWhichRoles = ({ include, exclude }, userRoles) => {
       const result = {};
-      Object.keys(matcher).forEach(roleGroup => {
-        const roles = matcher[roleGroup];
+      for (let roleGroup in exclude) {
+        const roles = exclude[roleGroup];
+        if (oneMatch(userRoles, roles)) return { excluded: true };
+      }
+      Object.keys(include).forEach(roleGroup => {
+        const roles = include[roleGroup];
         result[roleGroup] = oneMatch(userRoles, roles);
       });
       return result;
@@ -180,131 +184,59 @@
       .stdout.toString()
       .split('\n');
 
-    // TODO : DISCORD BUG requires the - 2, otherwise empty strings will be "processed"
-    const result = [];
-    for (let i = 1; i < everyoneWithRoles.length - 2; i += 2) {
+    const matcher = {
+      include: { ranks, country: countries, member: ['547405702293880844'], races },
+      exclude: {
+        guest: ['547406011842035715'],
+      },
+    };
+
+    const result = {};
+
+    // TODO : DISCORD BUG requires the - 1, otherwise empty strings will be "processed"
+    for (let i = 1; i < everyoneWithRoles.length - 1; i += 2) {
       const roles = everyoneWithRoles[i].split(',');
       const user = everyoneWithRoles[i - 1];
-      const matcher = {
-        ranks,
-        country: countries,
-        member: ['547405702293880844'],
-        races,
-        guest: ['547406011842035715'],
-      };
       const hasRoles = hasWhichRoles(matcher, roles);
-      result.push(user, hasRoles);
+      let key = '';
+      Object.keys(hasRoles).forEach(role => {
+        const hasRole = hasRoles[role];
+        if (!hasRole) {
+          key += `no${role}_and_`;
+        }
+      });
+      if (key !== '') {
+        if (result[key] === undefined) {
+          result[key] = [user];
+        } else {
+          result[key].push(user);
+        }
+      }
     }
-    const renderResult = result => {
-      const keys = Object.keys(result[1]);
-      const resultObject = {};
-      keys.forEach(key => {
-        resultObject[key] = [];
-        resultObject['no' + key] = [];
+
+    const prettyResults = [];
+    for (let missingRoleKeys in result) {
+      const roleKeyArr = missingRoleKeys.split('_and_');
+      roleKeyArr.pop();
+      const args = roleKeyArr.length;
+      const lastEl = roleKeyArr.splice(-1, 1)[0].slice(2);
+      const commaJoined = roleKeyArr.map(el => el.slice(2)).join(', ');
+      const prettyKey =
+        commaJoined !== ''
+          ? `${commaJoined.toUpperCase()} and ${lastEl.toUpperCase()}`
+          : lastEl.toUpperCase();
+      const tuple = [prettyKey, result[missingRoleKeys]];
+      if (prettyResults[args] === undefined) prettyResults[args] = [];
+      prettyResults[args].push(tuple);
+    }
+    prettyResults.forEach(prettyResult => {
+      prettyResult.forEach(([prettyKey, users]) => {
+        const prettyStr = `\n\nThese users don't have a role in the Role-Group: \`${prettyKey}\`\n`;
+        // The -3 are the "special characters like newline \n", they are counted in length but are not visible
+        process.stdout.write(prettyStr + `${'='.repeat(prettyStr.length - 3)}\n\n`);
+        users.forEach(user => process.stdout.write(`${user}\n`));
       });
-      for (let i = 1; i < result.length; i += 2) {
-        const user = result[i - 1];
-        const roleObject = result[i];
-        Object.keys(roleObject).forEach(key => {
-          // Here the guests are excluded.
-          const has = roleObject[key];
-          if (has) return resultObject[key].push(user);
-          resultObject['no' + key].push(user);
-        });
-      }
-      const purgeDup = (toPurge, duper) =>
-        toPurge.filter(cur => (duper.indexOf(cur) === -1 ? true : false));
-
-      keys.forEach(key => {
-        if (key !== 'guest') {
-          resultObject['no' + key] = purgeDup(
-            resultObject['no' + key],
-            resultObject.guest
-          );
-        }
-      });
-      delete resultObject.guest;
-
-      const newCompressorAlg = (array1, array2) => {
-        const newArr = [];
-        const _array1 = JSON.parse(JSON.stringify(array1));
-        const _array2 = JSON.parse(JSON.stringify(array2));
-
-        _array1.forEach((arr1Element, arr1Index) => {
-          const arr2Index = _array2.indexOf(arr1Element);
-          if (arr2Index !== -1) {
-            _array1[arr1Index] = undefined;
-            _array2[arr2Index] = undefined;
-            newArr.push(arr1Element);
-          }
-        });
-        return [_array1.map(e => Boolean(e)), _array2.map(e => Boolean(e)), newArr];
-      };
-
-      const constructLayeredKeys = (groups, groupLayers, keys, keyLayers, iter = 0) => {
-        iter++;
-        if (keys.length !== 1) {
-          const newKeyLayer = [];
-          const newGroups = {};
-          for (let i = 0; i < keys.length - 1; i++) {
-            newKeyLayer.push(keys[0] + '_and_' + keyLayers[0][i + iter]);
-            const [boolMap1, boolMap2, newArr] = newCompressorAlg(
-              groups[keys[0]],
-              groups[keys[i + 1]]
-            );
-            if (i !== 0) {
-              // if there is already a boolmap combine the boolmaps
-              const oldBoolMap = groupLayers[iter - 1][keys[0] + '_BoolMap'];
-              const newBoolMap = boolMap1.map((el, i) => el && oldBoolMap[i]);
-              groupLayers[iter - 1][keys[0] + '_BoolMap'] = newBoolMap;
-            } else {
-              groupLayers[iter - 1][keys[0] + '_BoolMap'] = boolMap1;
-            }
-            groupLayers[iter - 1][keys[i + 1] + '_BoolMap'] = boolMap2;
-            newGroups[newKeyLayer[i]] = newArr;
-          }
-          groupLayers.push(newGroups);
-          keyLayers.push(newKeyLayer);
-          return constructLayeredKeys(
-            newGroups,
-            groupLayers,
-            newKeyLayer,
-            keyLayers,
-            iter++
-          );
-        }
-        return groupLayers;
-      };
-      // TODO : rename `layeredKeys` to something more usable
-      const layeredKeys = constructLayeredKeys(
-        resultObject,
-        [resultObject],
-        keys.map(el => 'no' + el),
-        [keys.map(el => 'no' + el)]
-      );
-
-      for (let roleGroup of layeredKeys) {
-        for (let key in roleGroup) {
-          if (key.includes('_BoolMap')) continue;
-          if (!key.startsWith('no')) continue;
-          if (key.includes('noguest')) continue;
-          const boolMap = roleGroup[key + '_BoolMap'];
-          if (boolMap === undefined || boolMap.reduce((acc, cur) => cur || acc))
-            process.stdout.write(
-              `\n\nThese users don't have a role in the Role-Group ${key}\n===================================================\n\n`
-            );
-
-          if (boolMap !== undefined) {
-            roleGroup[key].forEach((user, i) => {
-              if (boolMap[i]) process.stdout.write(`${user}\n`);
-            });
-          } else {
-            roleGroup[key].forEach(user => process.stdout.write(`${user}\n`));
-          }
-        }
-      }
-    };
-    renderResult(result);
+    });
   };
 
   // MAIN PROGRAM STARTS
