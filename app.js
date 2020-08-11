@@ -15,6 +15,7 @@
   const prettyPrintCmd = `${toggler}PrettyPrint`;
   const printRolesCmd = `${toggler}PrintRoles`;
   const printJoinDateCmd = `${toggler}PrintJoinDate`;
+  const printUserIdCmd = `${toggler}PrintUserId`;
 
   const config = {
     [searchForRolesCmd]: true,
@@ -32,6 +33,7 @@
     [prettyPrintCmd]: true,
     [printRolesCmd]: false,
     [printJoinDateCmd]: false,
+    [printUserIdCmd]: false,
     listCommands: undefined,
     help: undefined,
     h: undefined,
@@ -50,22 +52,10 @@
     });
     process.exit(0);
   }
-
   const liquidWrangler = async () => {
-    const cMemChildProc = spawnSync(
-      // clanMemberChildProcess
-      'node',
-      [
-        'app',
-        'tTitle',
-        'tPrettyPrint',
-        'tAmount',
-        'tPrintRoles',
-        'tPrintJoinDate',
-        'sRole',
-        JSON.stringify(['Clan Member', '589030949488951296']),
-      ]
-    );
+    // clanMemberChildProcess
+    // prettier-ignore
+    const cMemChildProc = spawnSync('node', ['app', 'tTitle', 'tPrettyPrint', 'tAmount', 'tPrintRoles', 'tPrintJoinDate', 'sRole', JSON.stringify(['Clan Member', '589030949488951296'])]);
     const clanMembers = cMemChildProc.stdout.toString().split('\n');
 
     const hasRoles = (roles, userRoles) => {
@@ -291,6 +281,7 @@
       printRoles,
       printJoinDate,
       searchForRoleArray,
+      printUserId,
       i,
     },
     matchedUsers,
@@ -303,10 +294,9 @@
       if (toggleAmount) process.stdout.write(`${`Users with the \`${searchForRoleArray[i]}\` role: ${matchedUsers.size}`}\n`);
       // print matched users
       matchedUsers.forEach(user => {
-        if (toggleUser) {
-          console.log(user.user.tag);
-        }
-        if (printRoles) {
+        if (toggleUser) console.log(user.user.tag);
+
+        if (printRoles)
           console.log(
             user._roles.map(id => {
               const index = allRoles.indexOf(id);
@@ -319,7 +309,7 @@
               return allRoles[index - 1];
             })
           );
-        }
+
         if (printJoinDate)
           process.stdout.write(
             user.joinedAt
@@ -328,28 +318,29 @@
               .reverse()
               .join('-') + '\n'
           );
+
+        if (printUserId) console.log(user.id);
       });
     };
 
     const uglyPrinter = () => {
       // Ugly Print / Child Process
-      if (toggleAmount) {
+      if (toggleAmount)
         process.stdout.write(`${searchForRoleArray[i]}:${matchedUsers.size}\n`);
-      }
-      if (toggleUser) {
-        matchedUsers.forEach(user => {
-          process.stdout.write(user.user.tag + '\n');
-          if (printRoles) process.stdout.write(user._roles + '\n');
-          if (printJoinDate)
-            process.stdout.write(
-              user.joinedAt
-                .toLocaleDateString('de-DE', { dateStyle: 'medium' })
-                .split('.')
-                .reverse()
-                .join('-') + '\n'
-            );
-        });
-      }
+
+      matchedUsers.forEach(user => {
+        if (toggleUser) process.stdout.write(user.user.tag + '\n');
+        if (printRoles) process.stdout.write(user._roles + '\n');
+        if (printJoinDate)
+          process.stdout.write(
+            user.joinedAt
+              .toLocaleDateString('de-DE', { dateStyle: 'medium' })
+              .split('.')
+              .reverse()
+              .join('-') + '\n'
+          );
+        if (printUserId) process.stdout.write(`${user.id}\n`);
+      });
     };
     return prettyPrint ? prettyPrinter() : uglyPrinter();
   };
@@ -367,6 +358,7 @@
       [printRolesCmd]: printRoles,
       [printJoinDateCmd]: printJoinDate,
       [toggleTitleCmd]: toggleTitle,
+      [printUserIdCmd]: printUserId,
     } = config;
     // Bot logged in successfully
     bot.user.setActivity(' with your data :3');
@@ -385,6 +377,7 @@
             printRoles,
             printJoinDate,
             searchForRoleArray,
+            printUserId,
           },
           users,
           prettyPrint,
@@ -406,6 +399,7 @@
             printRoles,
             printJoinDate,
             searchForRoleArray,
+            printUserId,
             i,
           },
           matchedUsers,
